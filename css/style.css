@@ -1,0 +1,100 @@
+*{ margin:0; padding:0; box-sizing:border-box; font-family:system-ui, sans-serif; }
+body{ background:#0b0f1a; color:#eaeaea; scroll-behavior:smooth; }
+
+.hero{ height:100vh; background:url("../img/hero.jpg") center/cover no-repeat; position:relative; }
+.overlay{ position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,1)); }
+
+.hero-content{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; width:90%; }
+.hero h1{ font-size:60px; }
+.hero p{ margin-top:15px; font-size:20px; }
+
+nav{ position:sticky; top:0; background:rgba(10,15,30,.85); backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,.08); z-index:999; }
+.nav-container{ max-width:1200px; margin:auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; }
+.logo{ font-weight:700; color:#00bfff; }
+.links{ list-style:none; display:flex; gap:20px; }
+.links a{ text-decoration:none; color:#ccc; }
+.links a:hover{ color:#00bfff; }
+
+section {
+  max-width:1000px;
+  margin:auto;
+  padding:100px 20px;
+  opacity:1;
+  transform:translateY(0);
+  transition:none;
+}
+.section-scroll.visible{ opacity:1; transform:translateY(0); }
+.card{ background:#151b2c; padding:20px; margin:15px 0; border-radius:10px; }
+.section-img{ width:100%; border-radius:10px; margin:20px 0; }
+footer{ text-align:center; padding:20px; background:#0d1322; }
+.menu-btn{ display:none; flex-direction:column; gap:5px; }
+.menu-btn span{ width:25px; height:3px; background:white; }
+@media(max-width:768px){ .hero h1{ font-size:34px; } .hero p{ font-size:16px; }
+.links{ position:absolute; right:0; top:60px; background:#111827; flex-direction:column; width:200px; padding:20px; display:none; }
+.links.show{ display:flex; }
+.menu-btn{ display:flex; cursor:pointer; } }
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background:#151b2c;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Container for steps */
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Individual step card */
+.step-card {
+  background: #151b2c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+/* Hover effect */
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Step number circle */
+.step-number {
+  background: #00bfff;
+  color: #0b0f1a;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+}
+
+/* Step description */
+.step-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}

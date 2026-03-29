@@ -19,7 +19,10 @@
                 <li><a href="#komponentet">Komponentët</a></li>
                 <li><a href="#ndertimi">Ndërtimi</a></li>
                 <li><a href="#problemet">Problemet</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
                 <li><a href="#zgjidhjet">Zgjidhjet</a></li>
+                <li><a href="#app">Aplikacion</a></li>
+                <li><a href="#statistika">Statistika</a></li>
                 <li><a href="#keshilla">Këshilla</a></li>
             </ul>
 
@@ -97,6 +100,33 @@
     <div class="card">Zhurma e ventilatorëve – mund të jetë pluhur ose ventilator i dëmtuar</div>
 </section>
 
+<section id="chatbot" class="section-scroll" data-animate="fadeUp">
+    <h2>Chatbot Ndihmës</h2>
+
+    <div class="chatbot-container">
+        <div class="chatbot-text">
+            <p>
+                Merr ndihmë të menjëhershme për problemet e PC-së.
+                Chatbot-i mund të sugjerojë zgjidhje bazuar në simptomat që jep.
+            </p>
+
+            <ul>
+                <li>✔ Diagnostikim i shpejtë</li>
+                <li>✔ Sugjerime për zgjidhje</li>
+                <li>✔ Udhëzime hap pas hapi</li>
+            </ul>
+
+            <a href="https://ai-tech-helper--mousm7353.replit.app" target="_blank" class="chatbot-btn">
+                Hap Chatbot-in
+            </a>
+        </div>
+
+        <div class="chatbot-visual">
+            💬
+        </div>
+    </div>
+</section>
+
 <section id="zgjidhjet" class="section-scroll" data-animate="fadeUp">
     <h2>Zgjidhjet</h2>
     <div class="cards-container">
@@ -125,11 +155,19 @@
                 tregon sa mirë mund të ekzekutojë programe dhe lojëra të ndryshme.
             </p>
 
-            <a href="assets/CompInfo.exe" class="download-btn" download>
+            <a href="https://drive.google.com/drive/folders/1WMuhsPUFgjwMqvWje8WbnRTvWcR04Fop" class="download-btn" download>
                 Shkarko Aplikacionin
             </a>
         </div>
 
+    </div>
+</section>
+
+<section id="statistika" class="section-scroll" data-animate="fadeUp">
+    <h2>Statistika të Problemeve</h2>
+
+    <div class="chart-container">
+        <canvas id="problemsChart"></canvas>
     </div>
 </section>
 
@@ -149,6 +187,7 @@
     <p>&copy; 2026 PC Build. Të gjitha të drejtat e rezervuara.</p>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

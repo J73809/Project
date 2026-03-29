@@ -120,6 +120,57 @@ nav{
   transition:color var(--transition);
 }
 
+/* Chatbot */
+.chatbot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.chatbot-text {
+  max-width: 500px;
+}
+
+.chatbot-text ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.chatbot-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4cafef;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.chatbot-btn:hover {
+  background: #2f8cd6;
+  transform: scale(1.05);
+}
+
+.chatbot-visual {
+  font-size: 80px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Chart */
+.chart-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
 .links a::after{
   content:"";
   position:absolute;
@@ -372,4 +423,70 @@ footer{
     cursor:pointer;
   }
 
+}
+
+#problemsChart {
+width: 100%;
+max-width: 500px;
+height: 400px;
+margin: auto;
+}
+
+/* Sticky navbar */
+nav {
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Fix container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Links default */
+.links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Mobile */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
 }

@@ -490,3 +490,82 @@ nav {
     display: block;
   }
 }
+
+/* Tabs */
+.chart-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 15px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #4cafef;
+}
+
+/* Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Container for charts */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* controls spacing between cards */
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 10px;
+}
+
+/* Container for all chart cards */
+.charts-grid {
+  display: flex;            /* or grid */
+  flex-wrap: wrap;          /* allow cards to go to next line */
+  gap: 16px;                /* spacing between cards */
+  justify-content: center;  /* center cards horizontally */
+}
+
+/* Individual chart card */
+.chart-card {
+  background: #1e1e2f;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;   /* grow/shrink, min width 250px */
+  max-width: 480px;  /* prevent too wide */
+}
+
+.tab {
+  padding: 8px 16px;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;        /* tiny rounding */
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.tab:hover {
+  background: #2a2a2a;       /* slightly lighter on hover */
+}
+
+.tab.active {
+  background: var(--accent); /* your accent color */
+  color: #04121c;
+}

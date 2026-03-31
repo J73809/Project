@@ -101,7 +101,7 @@
 </section>
 
 <section id="chatbot" class="section-scroll" data-animate="fadeUp">
-    <h2>Shoku Inteligjent</h2>
+    <h2>Chatbot Ndihmës</h2>
 
     <div class="chatbot-container">
         <div class="chatbot-text">
@@ -116,7 +116,7 @@
                 <li>✔ Udhëzime hap pas hapi</li>
             </ul>
 
-            <a href="https://intelligent-computer-buddy--hoxhallijorges1.replit.app/" target="_blank" class="chatbot-btn">
+            <a href="https://ai-tech-helper--mousm7353.replit.app" target="_blank" class="chatbot-btn">
                 Hap Chatbot-in
             </a>
         </div>
@@ -163,11 +163,82 @@
     </div>
 </section>
 
-<section id="statistika" class="section-scroll" data-animate="fadeUp">
+<section id="statistika" class="section-scroll">
     <h2>Statistika të Problemeve</h2>
 
-    <div class="chart-container">
-        <canvas id="problemsChart"></canvas>
+    <!-- Tabs -->
+    <div class="chart-tabs">
+        <button class="tab active" data-tab="n1">1</button>
+        <button class="tab" data-tab="n2">2</button>
+        <button class="tab" data-tab="n3">3</button>
+        <button class="tab" data-tab="n4">4</button>
+        <button class="tab" data-tab="n5">5</button>
+    </div>
+
+    <!-- Content -->
+    <div class="tab-content active" id="n1">
+       <div class="charts-grid">
+           <div class="chart-card">
+               <h3>Sa shpesh përdorni rrjete sociale?</h3>
+               <canvas id="chart1"></canvas>
+           </div>
+           <div class="chart-card">
+               <h3>Koha online</h3>
+               <canvas id="chart2"></canvas>
+           </div>
+       </div>
+    </div>
+
+    <div class="tab-content" id="n2">
+       <div class="charts-grid">
+           <div class="chart-card">
+               <h3>Problemi kryesor</h3>
+               <canvas id="chart3"></canvas>
+           </div>
+           <div class="chart-card">
+               <h3>Permbajtje e papershtatshme</h3>
+               <canvas id="chart4"></canvas>
+           </div>
+       </div>
+    </div>
+
+    <div class="tab-content" id="n3">
+       <div class="charts-grid">
+           <div class="chart-card">
+               <h3>Probleme teknike</h3>
+               <canvas id="chart5"></canvas>
+           </div>
+           <div class="chart-card">
+               <h3>Privatesia</h3>
+               <canvas id="chart6"></canvas>
+           </div>
+       </div>
+    </div>
+
+    <div class="tab-content" id="n4">
+       <div class="charts-grid">
+           <div class="chart-card">
+               <h3>Vleresim i platformave</h3>
+               <canvas id="chart7"></canvas>
+           </div>
+           <div class="chart-card">
+               <h3>Eksperienca negative</h3>
+               <canvas id="chart8"></canvas>
+           </div>
+       </div>
+    </div>
+
+    <div class="tab-content" id="n5">
+       <div class="charts-grid">
+           <div class="chart-card">
+               <h3>Veshtiresia e perdorimit</h3>
+               <canvas id="chart9"></canvas>
+           </div>
+           <div class="chart-card">
+               <h3>Ndjenja e veresise</h3>
+               <canvas id="chart10"></canvas>
+           </div>
+       </div>
     </div>
 </section>
 
